@@ -28,7 +28,7 @@ const ReactionSchema = new Schema({
     }
   });
 
-const ThoughSchema = new Schema({
+const ThoughtSchema = new Schema({
   username: {
     type: String,
     required: 'You need to provide an author!',
