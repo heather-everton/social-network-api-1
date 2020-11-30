@@ -13,7 +13,7 @@ const ReactionSchema = new Schema({
   },
   username: {
     type: String,
-    required: 'You need to provide an author!',
+    required: 'You need to provide an user!',
     trim: true
   },
   createdAt: {
@@ -32,6 +32,11 @@ const ThoughtSchema = new Schema({
   username: {
     type: String,
     required: 'You need to provide an author!',
+    trim: true
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    required: 'You need to provide an user ID!',
     trim: true
   },
   thoughtText: {
