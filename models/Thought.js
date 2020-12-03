@@ -9,7 +9,8 @@ const ReactionSchema = new Schema({
   reactionBody: {
     type: String,
     required: 'You need to provide a reaction body!',
-    trim: true
+    trim: true,
+    validate: [({ length }) => length <= 280, 'Text should be shorter.']
   },
   username: {
     type: String,
